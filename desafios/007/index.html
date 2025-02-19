@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens em HTML5</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <p>Abra essa site em vários dispotivos diferentes ou simplemente aumente e diminua o tamanho do seu navegador</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens-flexiveis/verde-P.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens-flexiveis/azul-M.png" type="image/png">
+        <img src="imagens-flexiveis/verm-G.png" alt="imagem flexível">
+    </picture>
+
+    <h1>Reproduzindo Áudio em HTML5</h1>
+
+    <p>audio 1</p>
+    <audio src="midia-audio/What You Gonna Be - NEFFEX.mp3" controls></audio>
+
+    <p>audio 2</p>
+    <audio controls loop>
+        <source src="midia-audio/What You Gonna Be - NEFFEX.mp3" type="audio/mpeg">
+    </audio>
+    <br>
+    <a href="midia-audio/What You Gonna Be - NEFFEX.mp3" target="_blank">Abrir audio no link</a>
+</body>
+</html>

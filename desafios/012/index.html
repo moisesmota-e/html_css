@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+        /*Fonte incorporada do Fonts Google*/
+
+        @font-face {
+            font-family: 'buka';
+            src: url(fontes/Buka\ Bird.ttf) format(truetype);
+            font-weight: normal;
+            font-size: normal;
+            /* fonte externa baixada, colocada através do src: url("") */
+        }
+        body {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        h1 {
+            font-family: buka /*coloca o nome da fonte baixada em primeiro*/, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            color: brown;
+            text-align: center;    
+        }
+        h2 {
+            text-align: right;
+            font-family: "Bangers"
+        /*Fonte incorporada do Fonts Google colocando o nome da fonte*/
+        }
+        p {
+            text-align: justify;
+            text-indent: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>nome da fonte -> Buka Bird</h1>
+    <h2>Título 1</h2>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam delectus recusandae itaque nam corporis! Tempore dolorem iure, expedita sapiente nisi odit, aspernatur magni minus culpa vitae laudantium! Quisquam, debitis quo.</p>
+    <h2>Título 2</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis recusandae cum esse libero, nisi dicta natus optio? Id qui delectus accusantium! Amet eius repudiandae possimus expedita id eveniet ipsum maiores.</p>
+</body>
+</html>

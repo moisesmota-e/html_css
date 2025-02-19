@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplos de HOVER</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+        }
+        
+        div > p {
+            display: none;
+        }
+
+        div:hover > p {
+            background-color: rgb(0, 89, 255);
+            display: block;
+            width: 230px;
+        }
+
+        div:hover {
+            background-color: crimson;
+            width: 130px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplos de HOVER</h1>
+    <p>passe o mouse no texto abaixo</p>
+    <div>passe o mouse aqui
+        <p>serei um programador para os EUA</p>
+    </div>
+    <p>fim do processo</p>
+</body>
+</html>
