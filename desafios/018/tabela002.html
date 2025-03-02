@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 500px;
+            position: relative; /*fixar o cabeçalho*/
+        }
+
+        caption {
+            background-color: lightgray;
+            padding: 10px;
+            font-weight: bold;
+            font-size: 1.3em;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        tbody > tr:nth-child(2n) {
+            background-color: rgba(0, 0, 0, 0.527);
+            color: white;
+        }
+
+        thead {
+            position: sticky; /*fixar o cabeçalho*/
+            top: -1px; /*fixar o cabeçalho*/
+        }
+
+        thead, tfoot {
+            background-color: darkgray;
+            color: white;
+        }
+
+        td:nth-child(2) {
+            text-align: right;
+
+        } /*Uso da pseudo classe "nth-child" (filho na n-ésima posição ou filho de uma posição específica dentro de um conteiner). é uma forma poderosa de selecionar elementos com base em suas posições relativas entre seus irmãos, sem precisar adicionar CLASSES ou IDs adicionais ao HTML.*/
+   </style>
+</head>
+<body>
+    <h1>Usando tabelas grandes</h1>
+
+    <table>
+        <caption>POPULAÇÃO DAS UNIDADES FEDERATIVAS</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td>45.973.190</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td>21.322.692</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>17.219.679</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td>14.850.513</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td>11.824.665</td>
+            </tr>
+            <tfoot>
+                <tr>
+                    <th scope="row">População total</th>
+                    <td><strong>111.190.739</strong></td>
+                </tr>
+            </tfoot>
+        </tbody>
+    </table>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur minus officiis possimus iure nisi vitae est consequuntur! Odit, qui provident aut quidem temporibus labore, sed asperiores accusantium maiores necessitatibus ea?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Error alias necessitatibus et odio molestias sapiente ea dolor reprehenderit similique numquam beatae, rem eius velit dolore atque temporibus modi sint earum!
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium, quisquam placeat nisi quibusdam reprehenderit voluptatibus velit commodi fugiat veniam ut dignissimos voluptatum asperiores excepturi consequuntur molestiae voluptas id obcaecati amet
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam obcaecati ex esse, ut voluptate enim expedita deleniti, at eveniet tempore, incidunt omnis possimus. Odit est rerum hic ipsum enim tenetur.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla ratione eum eaque voluptas consectetur molestiae praesentium tempore iure eligendi ad, quasi beatae, similique quia inventore exercitationem nihil ipsum quibusdam tenetur?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, qui totam quasi nesciunt nobis saepe veniam enim consectetur modi et repudiandae iusto, eveniet praesentium nostrum omnis ipsum a quam perspiciatis!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus quasi illum fuga quod explicabo tempore assumenda. Corrupti expedita quos sit dolore aliquid exercitationem dolor porro! Corporis magnam impedit ducimus totam?
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo eius nihil debitis maiores molestiae perferendis repellat dolor quia atque qui amet assumenda quibusdam, dolorem, neque dolores ad distinctio, vel in
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis eos minima amet ipsam ad laboriosam nulla voluptatem. Architecto itaque pariatur odit accusantium repudiandae eaque, magni facere eligendi aliquam, nihil quod.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia deserunt quod excepturi, facilis ex iure, eaque neque omnis laudantium est minus velit perferendis. Neque, temporibus tenetur vitae voluptatum doloremque sequi.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis quas, obcaecati sapiente temporibus rerum culpa voluptatem numquam. Sit asperiores cupiditate error molestias dolor libero fugiat iste cumque. Impedit, fugit providentlorem
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore incidunt sunt ut exercitationem quae impedit magnam quia fuga eum, aspernatur saepe. Sunt qui earum totam, sit aut praesentium eos. Consectetur.
+    </p>
+</body>
+</html>
