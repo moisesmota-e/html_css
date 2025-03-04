@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício de Tabelas</title>
+    <style>
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        th {
+            background-color: rgb(195, 195, 196);
+        }
+
+        
+
+        caption {
+            border: 1px solid black;
+            padding: 5px;
+            font-size: 1.3em;
+            font-weight: bolder;
+            background-color: aquamarine;
+        }
+
+        .nome {
+            background-color: aquamarine;
+        }
+
+        col.sida {
+            background-color: red;
+        }
+
+        .prof {
+            background-color: yellow;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Exercício de Tabela</h1>
+    <table>
+        <colgroup>
+            <col class="nome">
+            <col class="sida" span="2">
+            <col class="prof">
+        </colgroup>
+
+        <caption>Cadastro</caption>
+        <thead>
+            <tr>
+                <th scope="col">Nome</th>
+                <th scope="col">Sexo</th>
+                <th scope="col">Idade</th>
+                <th scope="col">Profissão</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Maria</td>
+                <td>F</td>
+                <td>32</td>
+                <td>Data Scientist</td>
+            </tr>
+            <tr>
+                <td>Moisés</td>
+                <td>M</td>
+                <td>31</td>
+                <td>Dev Fullstack</td>
+            </tr>
+            <tr>
+                <td>Mota</td>
+                <td>M</td>
+                <td>33</td>
+                <td>AI Engineer</td>
+            </tr>
+            <tr>
+                <td>Lavínia</td>
+                <td>F</td>
+                <td>20</td>
+                <td>Dev Fullstack</td>
+            </tr>
+            <tr>
+                <td>Emanuel</td>
+                <td>M</td>
+                <td>18</td>
+                <td>Estagiário AI</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
