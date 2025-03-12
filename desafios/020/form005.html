@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de formulário</h1>
+    <form action="cadastro.php" method="get">
+        <fieldset>
+            <legend>sexo</legend>
+            <p>
+                <input type="radio" name="sexo" id="isxmas" value="M"> <label for="isxmas">Masculino</label>
+            </p>
+            <p>
+                <input type="radio" name="sexo" id="isxfem" value="F" checked> <label for="isxfem">Feminino</label>
+            </p>
+            <!-- Botões de RADIO que fazem parte do mesmo grupo só podem escolher uma das opções, para as caixas não ficarem marcadas ao mesmo tempo (e dá bug) é só colocar o mesmo NAME para as elas, diferente do LABEL abaixo que cada caixa PRECISA de um NAME -->
+        </fieldset>
+        <fieldset>
+            <legend>Esportes</legend>
+            <p>
+                <input type="checkbox" name="esfut" id="iesfut" checked> <label for="iesfut">Futebol</label>
+            </p>
+            <p>
+                <input type="checkbox" name="esbas" id="iesbas"> <label for="iesbas">Basquete</label>
+            </p>
+            <p>
+                <input type="checkbox" name="esten" id="iesten"> <label for="iesten">Tênis</label>
+            </p>
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
