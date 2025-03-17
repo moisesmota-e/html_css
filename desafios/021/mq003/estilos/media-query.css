@@ -2,10 +2,89 @@
 
 /* OUTRAS TELAS */
 
-* {
-    padding: 0px;
-    margin: 0px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1em;
-    box-sizing: border-box;
+@media print {
+    * {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+        background: url(../imagens/back-print.jpg);
+    }
+
+    main h1 {
+        color: black;
+        text-shadow: none;
+    }
+
+    main::after {
+        content: "essa impressão foi feita através do site";
+        text-decoration: overline;
+    }
+
+
+    main {
+        width: 90vw;
+        text-align: center;
+
+        background-color: none;
+        border: 2px solid black;
+
+        img#celular {display: none;}
+        img#tablet {display: none;}
+        img#impressora {display: block;}
+        img#desktop {display: none;}
+        img#televisao {display: none;}
+    }
+
+    
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    body {
+        background: url(../imagens/back-tablet.jpg);
+    }
+    
+    main {
+
+        img#celular {display: none;}
+        img#tablet {display: block;}
+        img#impressora {display: none;}
+        img#desktop {display: none;}
+        img#televisao {display: none;}
+
+    }
+}
+
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    body {
+        background: url(../imagens/back-pc.jpg);
+    }
+
+    main {
+        img#celular {display: none;}
+        img#tablet {display: none;}
+        img#impressora {display: none;}
+        img#desktop {display: block;}
+        img#televisao {display: none;}
+    }
+
+}
+
+
+@media screen and (min-width: 1200px) {
+    body {
+        background: url(../imagens/back-tv.jpg);
+    }
+
+    main {
+        width: 700px;
+
+        img#celular {display: none;}
+        img#tablet {display: none;}
+        img#impressora {display: none;}
+        img#desktop {display: none;}
+        img#televisao {display: block;}
+    }
 }
